@@ -1,0 +1,10 @@
+com/example/beerlover/DetailFragment.java
+ com.example.beerlover.DetailFragment
+com/example/beerlover/MainActivity.java
+ com.example.beerlover.MainActivity
+com/example/beerlover/ListFragment.java
+ com.example.beerlover.ListFragment
+com/example/beerlover/BuildConfig.java
+ com.example.beerlover.BuildConfig
+com/example/beerlover/MyListActivity.java
+ com.example.beerlover.MyListActivity
