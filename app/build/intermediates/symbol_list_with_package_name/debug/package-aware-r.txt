@@ -1282,6 +1282,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lightyellow
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2380,6 +2381,7 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
+drawable _1951124
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -2534,10 +2536,9 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
-id DetailFrag
-id EdtxtDescribe
+id EdtxtDetails
+id EdtxtName
 id FUNCTION
-id ListFrag
 id META
 id NO_DEBUG
 id SHIFT
@@ -2548,10 +2549,8 @@ id SYM
 id TOP_END
 id TOP_START
 id VimageBeer
-id VtextBeerName
+id VtextBeerDetails
 id VtxtBeerName
-id VtxtDate
-id VtxtDetails
 id VtxtWelcome
 id accelerate
 id accessibility_action_clickable_span
@@ -2638,6 +2637,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAdd
+id btnAddbeer
 id btnList
 id btnScan
 id buttonPanel
@@ -2653,6 +2654,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id checkBox
 id checkbox
 id checked
 id chip
@@ -2716,6 +2718,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id edTextDescr
 id edit_query
 id elastic
 id end
@@ -2738,8 +2741,6 @@ id fixed
 id flip
 id floating
 id forever
-id fragment
-id fragment2
 id fragment_container_view_tag
 id frost
 id ghost_view
@@ -2763,7 +2764,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView4
+id imgBeerAdd
 id immediateStop
 id included
 id info
@@ -2887,7 +2888,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id recyclerView
+id recyclerViewList
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3007,6 +3008,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtDetails
+id txtName
 id unchecked
 id uniform
 id unlabeled
@@ -3126,6 +3129,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_beer
 layout activity_main
 layout activity_my_list
 layout custom_dialog
@@ -3144,8 +3148,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_detail
-layout fragment_list
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3262,6 +3264,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add_beer
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3272,6 +3275,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string details
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -3363,6 +3367,7 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
 string my_list
+string name
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3371,6 +3376,7 @@ string path_password_strike_through
 string scan
 string search_menu_title
 string status_bar_notification_info_overflow
+string todo
 string welcome_msg
 string zxing_app_name
 string zxing_button_ok

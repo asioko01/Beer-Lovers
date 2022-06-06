@@ -6,4 +6,8 @@
     <string name="scan">Scan</string>
     <string name="my_list">My List</string>
     <string name="give_your_describe">Give your describe</string>
+    <string name="add_beer">add beer</string>
+    <string name="todo">TODO</string>
+    <string name="name">Name</string>
+    <string name="details">Details</string>
 </resources>

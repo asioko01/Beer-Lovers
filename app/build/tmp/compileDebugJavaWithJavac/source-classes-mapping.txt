@@ -1,15 +1,20 @@
-com/example/beerlover/DetailFragment.java
- com.example.beerlover.DetailFragment
 com/example/beerlover/MainActivity.java
  com.example.beerlover.MainActivity
  com.example.beerlover.MainActivity$1
  com.example.beerlover.MainActivity$2
  com.example.beerlover.MainActivity$3
-com/example/beerlover/ListFragment.java
- com.example.beerlover.ListFragment
+ com.example.beerlover.MainActivity$4
+com/example/beerlover/Beer_recyclerviewAdapter.java
+ com.example.beerlover.Beer_recyclerviewAdapter
+ com.example.beerlover.Beer_recyclerviewAdapter$MyViewHolder
 com/example/beerlover/BuildConfig.java
  com.example.beerlover.BuildConfig
 com/example/beerlover/MyListActivity.java
  com.example.beerlover.MyListActivity
 com/example/beerlover/Capture.java
  com.example.beerlover.Capture
+com/example/beerlover/add_beer.java
+ com.example.beerlover.add_beer
+ com.example.beerlover.add_beer$1
+com/example/beerlover/BeerViewModel.java
+ com.example.beerlover.BeerViewModel
