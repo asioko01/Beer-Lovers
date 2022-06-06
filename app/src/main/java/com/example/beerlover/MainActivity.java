@@ -18,7 +18,7 @@ import com.google.zxing.integration.android.IntentResult;
 public class MainActivity extends AppCompatActivity {
 
     private TextView VtxtWelcome;
-    private Button btnList, btnScan;
+    private Button btnList, btnScan, btnAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         VtxtWelcome = findViewById(R.id.VtxtWelcome);
         btnList = findViewById(R.id.btnList);
         btnScan = findViewById(R.id.btnScan);
+        btnAdd = findViewById(R.id.btnAdd);
+
         btnList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(myListActivity);
             }
         });
+
         btnScan.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
 
@@ -49,7 +52,13 @@ public class MainActivity extends AppCompatActivity {
                 intentIntegrator.setCaptureActivity(Capture.class);
 
                 intentIntegrator.initiateScan();
+            }
+        });
 
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent add = new Intent(getApplicationContext(), add_beer.class);
+                startActivity(add);
 
             }
         });
