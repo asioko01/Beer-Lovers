@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 public class Beer_recyclerviewAdapter extends RecyclerView.Adapter<Beer_recyclerviewAdapter.MyViewHolder> {
 
     Context context;
-    ArrayList<BeerViewModel> beerViewModels;
+    ArrayList<BeerDB> beerViewModels;
 
     @NonNull
     @Override
@@ -23,7 +24,7 @@ public class Beer_recyclerviewAdapter extends RecyclerView.Adapter<Beer_recycler
         View view = inflater.inflate(R.layout.recycler_view_row,parent,false);
         return new Beer_recyclerviewAdapter.MyViewHolder(view);
     }
-    public Beer_recyclerviewAdapter(Context context, ArrayList<BeerViewModel> beerViewModels)
+    public Beer_recyclerviewAdapter(Context context, ArrayList<BeerDB> beerViewModels)
     {
         this.context = context;
         this.beerViewModels = beerViewModels;
@@ -33,9 +34,13 @@ public class Beer_recyclerviewAdapter extends RecyclerView.Adapter<Beer_recycler
     public void onBindViewHolder(@NonNull Beer_recyclerviewAdapter.MyViewHolder holder, int position) {
         // assign values to the views
         // based on the position of the recycler view
-        System.out.println(beerViewModels.get(position).getBeerName() + " keno " + beerViewModels.get(position).getBeerDetails());
-        holder.details.setText(beerViewModels.get(position).getBeerDetails());
-        holder.name.setText(beerViewModels.get(position).getBeerName());
+        holder.details.setText(beerViewModels.get(position).getDet());
+        holder.name.setText(beerViewModels.get(position).getName());
+
+        if(beerViewModels.get(position).getPic().equals("bottle"))
+            holder.pic.setImageResource(R.drawable.bottle);
+        else
+            holder.pic.setImageResource(R.drawable.images);
 
 
     }
@@ -48,10 +53,14 @@ public class Beer_recyclerviewAdapter extends RecyclerView.Adapter<Beer_recycler
     public static class  MyViewHolder extends  RecyclerView.ViewHolder{
 
         TextView name, details;
+        ImageView pic ;
         public MyViewHolder(@NonNull View itemView){
             super(itemView);
             name = itemView.findViewById(R.id.VtxtBeerName);
             details = itemView.findViewById(R.id.VtextBeerDetails);
+
+            pic = itemView.findViewById(R.id.VimageBeer);
+
         }
     }
 

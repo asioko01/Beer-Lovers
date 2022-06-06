@@ -11,6 +11,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.util.Random;
 
 public class add_beer extends AppCompatActivity {
 
@@ -39,14 +40,31 @@ public class add_beer extends AppCompatActivity {
                 else
                     {
                         Intent add = new Intent(getApplicationContext(), MyListActivity.class);
-                        add.putExtra("name", edName.getText().toString().trim());
-                        add.putExtra("details",edDetails.getText().toString().trim());
+//                        add.putExtra("name", edName.getText().toString().trim());
+//                        add.putExtra("details",edDetails.getText().toString().trim());
+                        String d = "bottle";
+                        if(draught.isChecked())
+                        {
+                            d = "draught";
+                        //    add.putExtra("draught","draught");
+                        }
+//                        else
+//                            add.putExtra("draught","bottle");
 
+                        MyDBHandler handler = new MyDBHandler(getApplicationContext(),null,null,4);
+                        BeerDB b = new BeerDB(code(),edName.getText().toString().trim(),edDetails.getText().toString().trim() ,1,d);
+                        handler.addHandler(b);
                         startActivity(add);
                     }
             }
 
         });
 
+    }
+    private String code()
+    {
+        Random r = new Random();
+        Integer n = r.nextInt();
+        return n.toString();
     }
 }

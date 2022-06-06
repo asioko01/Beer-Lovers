@@ -72,6 +72,24 @@ public class MainActivity extends AppCompatActivity {
         if(intentResult.getContents()!=null){
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
             builder.setTitle("Result");
+
+            MyDBHandler hand = new MyDBHandler(this,null,null,2);
+
+           BeerDB b ;
+           b =   hand.findHandler(intentResult.getContents());
+
+           hand.updateHandler(b.getCode(),b.getName(),b.getDet(),1,b.getPic());
+            Intent myListActivity = new Intent(getApplicationContext(), MyListActivity.class);
+
+/**            myListActivity.putExtra("name",b.getName());
+            myListActivity.putExtra("details",b.getDet());
+            myListActivity.putExtra("draught",b.getPic());
+            if(!b.getDesc().isEmpty())
+                myListActivity.putExtra("desc",b.getDesc());
+ **/
+            startActivity(myListActivity);
+
+            /**
             builder.setMessage(intentResult.getContents());
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @Override
@@ -81,10 +99,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
             builder.show();
-
+        **/
         }else{
             Toast.makeText(getApplicationContext(),"You did not scan anything",Toast.LENGTH_SHORT).show();
 
         }
     }
+
 }
