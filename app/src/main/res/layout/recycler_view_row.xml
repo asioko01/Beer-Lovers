@@ -27,12 +27,17 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                android:adjustViewBounds="true"
+                android:maxWidth="100dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
                 android:id="@+id/VtxtBeerName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
                 android:text="name"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -44,25 +49,35 @@
                 android:id="@+id/VtextBeerDetails"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="13dp"
+                android:layout_marginTop="28dp"
                 android:text="details"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/VimageBeer"
                 app:layout_constraintTop_toBottomOf="@+id/VtxtBeerName" />
 
-            <EditText
-                android:id="@+id/edTextDescr"
-                android:layout_width="0dp"
+            <TextView
+                android:id="@+id/txtNam"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Give your description"
-                android:inputType="textPersonName"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="Name:"
+                app:layout_constraintBottom_toTopOf="@+id/VtxtBeerName"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/VimageBeer"
-                app:layout_constraintTop_toBottomOf="@+id/VtextBeerDetails"
-                app:layout_constraintVertical_bias="1.0" />
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details:"
+                app:layout_constraintBottom_toTopOf="@+id/VtextBeerDetails"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/VimageBeer"
+               android:textStyle="bold"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

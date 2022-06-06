@@ -1,9 +1,12 @@
+com/example/beerlover/MyDBHandler.java
+ com.example.beerlover.MyDBHandler
 com/example/beerlover/MainActivity.java
  com.example.beerlover.MainActivity
  com.example.beerlover.MainActivity$1
  com.example.beerlover.MainActivity$2
  com.example.beerlover.MainActivity$3
- com.example.beerlover.MainActivity$4
+com/example/beerlover/BeerDB.java
+ com.example.beerlover.BeerDB
 com/example/beerlover/Beer_recyclerviewAdapter.java
  com.example.beerlover.Beer_recyclerviewAdapter
  com.example.beerlover.Beer_recyclerviewAdapter$MyViewHolder
@@ -16,5 +19,3 @@ com/example/beerlover/Capture.java
 com/example/beerlover/add_beer.java
  com.example.beerlover.add_beer
  com.example.beerlover.add_beer$1
-com/example/beerlover/BeerViewModel.java
- com.example.beerlover.BeerViewModel

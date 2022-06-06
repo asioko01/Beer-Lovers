@@ -8,14 +8,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MyListActivity extends AppCompatActivity {
 
-    ArrayList<BeerViewModel> beerViewModels;
+    ArrayList<BeerDB> beerViewModels;
+    EditText desc;
 
 
     @Override
@@ -25,20 +29,29 @@ public class MyListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my_list);
 
         beerViewModels  = new ArrayList<>();
-        //fortoma apo vasi
 
-        Bundle extras = getIntent().getExtras();
+        MyDBHandler handler = new MyDBHandler(this,null,null,2);
+        beerViewModels = handler.loadHandler();
+
+
+//        Bundle extras = getIntent().getExtras();
         RecyclerView recyclerView = findViewById(R.id.recyclerViewList);
-
-        if(extras != null)
-            setBeerViewModels(extras.getString("name"),extras.getString("details"));
+//        String  desc;
+////        if(extras != null) {
+////            setBeerViewModels(extras.getString("name"), extras.getString("details"),extras.getString("draught"));
+////
+////            if(!extras.getString("desc").isEmpty())
+////                desc = extras.getString("desc");
+////        }
         //ser recyclerview from scan
-        System.out.println("on myList");
+
         if(!beerViewModels.isEmpty()) {
             Beer_recyclerviewAdapter adapter = new Beer_recyclerviewAdapter(this,beerViewModels);
             recyclerView.setAdapter(adapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
         }
+
+
 
 
     }
@@ -49,9 +62,10 @@ public class MyListActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void setBeerViewModels(String name, String details)
-    {
-        beerViewModels.add(new BeerViewModel(name,details));
+//    public void setBeerViewModels(String name, String details,  String draught)
+//    {
+//        beerViewModels.add(new BeerDB(name,1,details,draught));
+//
+//    }
 
-    }
 }
