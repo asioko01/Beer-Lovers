@@ -5,6 +5,8 @@ com/example/beerlover/MainActivity.java
  com.example.beerlover.MainActivity$1
  com.example.beerlover.MainActivity$2
  com.example.beerlover.MainActivity$3
+ com.example.beerlover.MainActivity$4
+ com.example.beerlover.MainActivity$5
 com/example/beerlover/BeerDB.java
  com.example.beerlover.BeerDB
 com/example/beerlover/Beer_recyclerviewAdapter.java

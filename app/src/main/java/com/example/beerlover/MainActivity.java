@@ -70,36 +70,47 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         IntentResult intentResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if(intentResult.getContents()!=null){
-            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setTitle("Result");
+
 
             MyDBHandler hand = new MyDBHandler(this,null,null,2);
 
            BeerDB b ;
            b =   hand.findHandler(intentResult.getContents());
-
-           hand.updateHandler(b.getCode(),b.getName(),b.getDet(),1,b.getPic());
-            Intent myListActivity = new Intent(getApplicationContext(), MyListActivity.class);
+           if(b!=null) {
+               hand.updateHandler(b.getCode(), b.getName(), b.getDet(), 1, b.getPic());
+               Intent myListActivity = new Intent(getApplicationContext(), MyListActivity.class);
 
 /**            myListActivity.putExtra("name",b.getName());
-            myListActivity.putExtra("details",b.getDet());
-            myListActivity.putExtra("draught",b.getPic());
-            if(!b.getDesc().isEmpty())
-                myListActivity.putExtra("desc",b.getDesc());
+ myListActivity.putExtra("details",b.getDet());
+ myListActivity.putExtra("draught",b.getPic());
+ if(!b.getDesc().isEmpty())
+ myListActivity.putExtra("desc",b.getDesc());
  **/
-            startActivity(myListActivity);
+               startActivity(myListActivity);
+           }
+           else{ //περίπτωση στην οποία το barcode δεν υπάρχει στην βάση
+               AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+               builder.setTitle("Result");
+                builder.setMessage("Sorry , we cannot find the beer you scanned , but you can add it manually by clicking the (ADD BEER) button and filling in all the data ");
+                builder.setPositiveButton("ADD BEER", new DialogInterface.OnClickListener() {
+               @Override
+               public void onClick(DialogInterface dialog, int which) {
+               //dialog.dismiss();
+                   Intent addBeer = new Intent(getApplicationContext(), add_beer.class);
+                   startActivity(addBeer);
+               }
+               });
+               builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                   @Override
+                   public void onClick(DialogInterface dialog, int which) {
+                       dialog.dismiss();
 
-            /**
-            builder.setMessage(intentResult.getContents());
-            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
+                   }
+               });
+                builder.show();
+           }
 
-                }
-            });
-            builder.show();
-        **/
+
         }else{
             Toast.makeText(getApplicationContext(),"You did not scan anything",Toast.LENGTH_SHORT).show();
 
