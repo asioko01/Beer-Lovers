@@ -40,11 +40,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BeerLover" >
-        <activity android:name="com.example.beerlover.add_beer" />
-        <activity android:name="com.example.beerlover.MyListActivity" />
+        <activity
+            android:name="com.example.beerlover.add_beer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.beerlover.MyListActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.beerlover.MainActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

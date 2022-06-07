@@ -11,10 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BeerLover">
-        <activity android:name=".add_beer"></activity>
-        <activity android:name=".MyListActivity" />
+        <activity
+            android:name=".add_beer"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MyListActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -54,7 +54,7 @@
 32-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:43:9-33
 33
 34    <application
-34-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:7:5-30:19
+34-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:7:5-34:19
 35        android:allowBackup="true"
 35-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:8:9-35
 36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -70,75 +70,83 @@
 41-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:12:9-35
 42        android:theme="@style/Theme.BeerLover" >
 42-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:13:9-47
-43        <activity android:name="com.example.beerlover.add_beer" />
-43-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:14:9-55
-43-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:14:19-43
-44        <activity android:name="com.example.beerlover.MyListActivity" />
-44-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:15:9-52
-44-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:15:19-49
-45        <activity
-45-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:16:9-24:20
-46            android:name="com.example.beerlover.MainActivity"
-46-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:17:13-41
-47            android:exported="true" >
-47-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:18:13-36
-48            <intent-filter>
-48-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:19:13-23:29
-49                <action android:name="android.intent.action.MAIN" />
-49-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:20:17-69
-49-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:20:25-66
-50
-51                <category android:name="android.intent.category.LAUNCHER" />
-51-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:22:17-77
-51-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:22:27-74
-52            </intent-filter>
-53        </activity>
-54        <activity
-54-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:25:9-29:57
-55            android:name="com.example.beerlover.Capture"
-55-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:26:13-36
-56            android:screenOrientation="portrait"
-56-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:27:13-49
-57            android:stateNotNeeded="true"
-57-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:28:13-42
-58            android:theme="@style/zxing_CaptureTheme" />
-58-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:29:13-54
+43        <activity
+43-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:14:9-16:52
+44            android:name="com.example.beerlover.add_beer"
+44-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:15:13-37
+45            android:screenOrientation="portrait" />
+45-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:16:13-49
+46        <activity
+46-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:17:9-18:51
+47            android:name="com.example.beerlover.MyListActivity"
+47-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:17:19-49
+48            android:screenOrientation="portrait" />
+48-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:18:13-49
+49        <activity
+49-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:19:9-28:20
+50            android:name="com.example.beerlover.MainActivity"
+50-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:20:13-41
+51            android:exported="true"
+51-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:22:13-36
+52            android:screenOrientation="portrait" >
+52-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:21:13-49
+53            <intent-filter>
+53-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:23:13-27:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:24:17-69
+54-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:24:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:26:17-77
+56-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:26:27-74
+57            </intent-filter>
+58        </activity>
 59        <activity
-59-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:46:9-52:63
-60            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-60-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:47:13-74
-61            android:clearTaskOnLaunch="true"
-61-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:48:13-45
-62            android:screenOrientation="sensorLandscape"
-62-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:49:13-56
-63            android:stateNotNeeded="true"
-63-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:50:13-42
-64            android:theme="@style/zxing_CaptureTheme"
-64-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:51:13-54
-65            android:windowSoftInputMode="stateAlwaysHidden" />
-65-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:52:13-60
-66
-67        <provider
-67-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-68            android:name="androidx.startup.InitializationProvider"
-68-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-69            android:authorities="com.example.beerlover.androidx-startup"
-69-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-70            android:exported="false" >
-70-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-71            <meta-data
-71-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-72                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-72-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-73                android:value="androidx.startup" />
-73-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-74            <meta-data
-74-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\336367916adc8311afb7ae7d42fe4bb0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-75                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-75-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\336367916adc8311afb7ae7d42fe4bb0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-76                android:value="androidx.startup" />
-76-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\336367916adc8311afb7ae7d42fe4bb0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-77        </provider>
-78    </application>
-79
-80</manifest>
+59-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:29:9-33:57
+60            android:name="com.example.beerlover.Capture"
+60-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:30:13-36
+61            android:screenOrientation="portrait"
+61-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:31:13-49
+62            android:stateNotNeeded="true"
+62-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:32:13-42
+63            android:theme="@style/zxing_CaptureTheme" />
+63-->C:\Users\user\AndroidStudioProjects\Beer-Lovers\app\src\main\AndroidManifest.xml:33:13-54
+64        <activity
+64-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:46:9-52:63
+65            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+65-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:47:13-74
+66            android:clearTaskOnLaunch="true"
+66-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:48:13-45
+67            android:screenOrientation="sensorLandscape"
+67-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:49:13-56
+68            android:stateNotNeeded="true"
+68-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:50:13-42
+69            android:theme="@style/zxing_CaptureTheme"
+69-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:51:13-54
+70            android:windowSoftInputMode="stateAlwaysHidden" />
+70-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\8df21e36f1f1f1e06d03da029dcd9adf\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:52:13-60
+71
+72        <provider
+72-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+73            android:name="androidx.startup.InitializationProvider"
+73-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+74            android:authorities="com.example.beerlover.androidx-startup"
+74-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+75            android:exported="false" >
+75-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+76            <meta-data
+76-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+77                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+77-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+78                android:value="androidx.startup" />
+78-->[androidx.emoji2:emoji2:1.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\873fae0beeff47808d46bd64157b4d70\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+79            <meta-data
+79-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\336367916adc8311afb7ae7d42fe4bb0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+80                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+80-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\336367916adc8311afb7ae7d42fe4bb0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+81                android:value="androidx.startup" />
+81-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\336367916adc8311afb7ae7d42fe4bb0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+82        </provider>
+83    </application>
+84
+85</manifest>
