@@ -91,13 +91,21 @@ public class MainActivity extends AppCompatActivity {
            else{ //περίπτωση στην οποία το barcode δεν υπάρχει στην βάση
                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                builder.setTitle("Result");
-                builder.setMessage("Sorry , we cannot find the beer you scanned , but you can add it manually by clicking the (add beer) button and filling in all the data ");
-                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                builder.setMessage("Sorry , we cannot find the beer you scanned , but you can add it manually by clicking the (ADD BEER) button and filling in all the data ");
+                builder.setPositiveButton("ADD BEER", new DialogInterface.OnClickListener() {
                @Override
                public void onClick(DialogInterface dialog, int which) {
-               dialog.dismiss();
-
+               //dialog.dismiss();
+                   Intent addBeer = new Intent(getApplicationContext(), add_beer.class);
+                   startActivity(addBeer);
                }
+               });
+               builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                   @Override
+                   public void onClick(DialogInterface dialog, int which) {
+                       dialog.dismiss();
+
+                   }
                });
                 builder.show();
            }
